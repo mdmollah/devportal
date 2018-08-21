@@ -3,7 +3,7 @@ language: java
 before_install:
 #  - yes y | sudo python -m pip uninstall pip
   - wget https://bootstrap.pypa.io/get-pip.py
-  - python get-pip.py
+  - python --user get-pip.py
   - pwd
   - cd ~/
   - pwd 
