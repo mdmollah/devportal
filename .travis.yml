@@ -1,6 +1,6 @@
 language: java
 before_install:
-  - python -m pip uninstall pip
+  - yes w | python -m pip uninstall pip
   - wget https://bootstrap.pypa.io/get-pip.py | python
   - pip install robotframework-seleniumlibrary
   - find / -type d -iname site-packages -print
