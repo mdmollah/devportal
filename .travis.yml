@@ -4,7 +4,8 @@ before_install:
 #  - yes y | sudo python -m pip uninstall pip
   - wget https://bootstrap.pypa.io/get-pip.py | python - --user
   - ls -ltr ~/
-  - pwd
+  - cd ~
+  - ls -ltr
   - find . -type f -iname *pip* -print
 #  - pip install robotframework-seleniumlibrary
 # - find / -type f -iname webdriver.py -print
