@@ -1,9 +1,9 @@
 language: java
-#sudo: required
+sudo: required
 before_install:
 #  - yes y | sudo python -m pip uninstall pip
   - wget https://bootstrap.pypa.io/get-pip.py
-  - python --user get-pip.py
+  - sudo python get-pip.py 
   - pwd
   - cd ~/
   - pwd 
