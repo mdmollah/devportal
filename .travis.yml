@@ -1,6 +1,6 @@
 language: java
 before_install:
-  - pip install --upgrade pip
+#  - pip install --upgrade pip
   - pip install robotframework-seleniumlibrary
   - find / -type d -iname site-packages -print
 #script: mvn clean install
