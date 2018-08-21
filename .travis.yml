@@ -8,7 +8,7 @@ before_install:
   - which pip 
   - sudo pip install pyOpenSSL ndg-httpsclient pyasn1
   - sudo pip install robotframework-seleniumlibrary
-  - mkdir target/robotframework/libraries
+  - mkdir -p target/robotframework/libraries
   - cp -r /usr/local/lib/python2.7/site-packages/* target/robotframework/libraries/ 
   - find . -type f -iname webdriver.py -print
 #script: mvn clean install
