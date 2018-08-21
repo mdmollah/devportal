@@ -5,9 +5,9 @@ before_install:
   - wget https://bootstrap.pypa.io/get-pip.py
   - sudo python get-pip.py 
   - pwd
-  - cd ~/
-  - pwd 
+  - which pip 
   - find . -type f -iname *pip* -print
-#  - pip install robotframework-seleniumlibrary
+  - pip install pyOpenSSL ndg-httpsclient pyasn1
+  - pip install robotframework-seleniumlibrary
 # - find / -type f -iname webdriver.py -print
 #script: mvn clean install
