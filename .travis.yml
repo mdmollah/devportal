@@ -1,5 +1,6 @@
 language: java
 before_install:
-  - pip install selinumlibrary
+  - pip install pyopenssl ndg-httpsclient pyasn1
+  - pip install robotframework-seleniumlibrary
   - find / -type d -iname site-packages -print
 #script: mvn clean install
