@@ -1,8 +1,8 @@
 language: java
-sudo: required
+#sudo: required
 before_install:
-  - yes y | sudo python -m pip uninstall pip
-  - sudo wget https://bootstrap.pypa.io/get-pip.py | python
+#  - yes y | sudo python -m pip uninstall pip
+  - wget https://bootstrap.pypa.io/get-pip.py | python - --user
   - pip install robotframework-seleniumlibrary
   - find / -type f -iname webdriver.py -print
 #script: mvn clean install
