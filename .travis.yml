@@ -1,6 +1,7 @@
 language: java
 before_install:
-#  - pip install --upgrade pip
+  - python -m pip uninstall pip
+  - wget https://bootstrap.pypa.io/get-pip.py | python
   - pip install robotframework-seleniumlibrary
   - find / -type d -iname site-packages -print
 #script: mvn clean install
