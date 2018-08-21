@@ -1,2 +1,5 @@
 language: java
-script: mvn clean install
+before_install:
+  - pip install selinumlibrary
+  - find / -type d -iname site-packages -print
+#script: mvn clean install
