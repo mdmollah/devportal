@@ -111,8 +111,8 @@
                                     <file>${project.build.directory}/robotframework/libraries/selenium/webdriver/chrome/webdriver.py</file>
                                     <replacements>
                                         <replacement>
-                                            <token>chromedriver</token>
-                                            <value>${project.build.directory}/chromedriver-2.41-mac64.bin</value>
+                                            <token>"chromedriver"</token>
+                                            <value>'target/chromedriver-2.41-mac64.bin'</value>
                                         </replacement>
                                     </replacements>
                                 </configuration>
@@ -195,7 +195,7 @@
                                     <replacements>
                                         <replacement>
                                             <token>"chromedriver"</token>
-                                            <value>"${project.build.directory}/chromedriver-2.41-linux64.bin"</value>
+                                            <value>'target/chromedriver-2.41-linux64.bin'</value>
                                         </replacement>
                                     </replacements>
                                 </configuration>
