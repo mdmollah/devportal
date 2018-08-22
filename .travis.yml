@@ -1,5 +1,7 @@
 #language: java
 sudo: required
+addons:
+  chrome: stable
 before_install:
 #  - yes y | sudo python -m pip uninstall pip
 #  - wget https://bootstrap.pypa.io/get-pip.py
@@ -16,5 +18,5 @@ before_install:
 #  - cat target/robotframework/libraries/selenium/webdriver/chrome/webdriver.py
 #  - cat target/robotframework/libraries/selenium/webdriver/chrome/webdriver.py
   - google-chrome --version
-#script:
-#  - mvn install
+script:
+  - mvn install
