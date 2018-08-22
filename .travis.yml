@@ -10,7 +10,7 @@ before_install:
   - sudo pip install --upgrade pip 
   - sudo pip install robotframework-seleniumlibrary
   - mkdir -p target/robotframework/libraries
-  - cp -r /usr/local/lib/python2.7/dist-packages/* target/robotframework/libraries/ 
+  - cp -r /usr/local/lib/python2.7/dist-packages/pip/_vendor/* target/robotframework/libraries/ 
 #  - find / -type f -iname webdriver.py -print
   - find target/robotframework/libraries -type d -iname urllib3
 script: mvn install
