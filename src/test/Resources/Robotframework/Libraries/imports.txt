@@ -1,0 +1,4 @@
+*** Settings ***
+Resource      Generic/generic_keywords.robot
+Resource      Generic/GUI_MAP_HOME_PAGE.robot
+Resource      Generic/GUI_MAP_REGISTER_DIALOG.robot
