@@ -8,7 +8,7 @@ before_install:
 #  - which pip
   - sudo pip install pyOpenSSL ndg-httpsclient pyasn1
   - sudo pip install --upgrade pip 
-  - pip install robotframework-seleniumlibrary urllib3 --user
+  - sudo pip install robotframework-seleniumlibrary urllib3
   - mkdir -p target/robotframework/libraries
   - ls -lR /usr/local/lib/python2.7/ ~
 #  - cp -r /usr/local/lib/python2.7/dist-packages/pip/_vendor/* target/robotframework/libraries/ 
