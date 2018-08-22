@@ -13,6 +13,7 @@ before_install:
 #  - ls -lR /usr/local/lib/python2.7/ ~
   - cp -r /usr/local/lib/python2.7/dist-packages/* target/robotframework/libraries/ 
   - cp -r /usr/local/lib/python2.7/dist-packages/pip/_vendor/* target/robotframework/libraries/
-  - cat target/robotframework/libraries/selenium/webdriver/chrome/webdriver.py
-  - mvn compile
-  - cat target/robotframework/libraries/selenium/webdriver/chrome/webdriver.py
+#  - cat target/robotframework/libraries/selenium/webdriver/chrome/webdriver.py
+#  - cat target/robotframework/libraries/selenium/webdriver/chrome/webdriver.py
+scripts:
+  - mvn install
