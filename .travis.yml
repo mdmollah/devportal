@@ -1,11 +1,12 @@
-language: java
+#language: java
 sudo: required
 before_install:
 #  - yes y | sudo python -m pip uninstall pip
 #  - wget https://bootstrap.pypa.io/get-pip.py
 #  - sudo python get-pip.py 
 #  - pwd
-#  - which pip 
+#  - which pip
+  - pip install --upgrade pip 
   - sudo pip install pyOpenSSL ndg-httpsclient pyasn1 urllib3
   - sudo pip install robotframework-seleniumlibrary
   - mkdir -p target/robotframework/libraries
