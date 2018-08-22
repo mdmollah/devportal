@@ -8,7 +8,7 @@ before_install:
   - sudo pip install pyOpenSSL ndg-httpsclient pyasn1
   - sudo pip install --upgrade pip
   - sudo pip install robotframework-seleniumlibrary robotframework-imaplibrary
-    - mkdir -p target/robotframework/libraries
+  - mkdir -p target/robotframework/libraries
   - cp -r /usr/local/lib/python2.7/dist-packages/* target/robotframework/libraries/
   - cp -r /usr/local/lib/python2.7/dist-packages/pip/_vendor/* target/robotframework/libraries/
 script:
