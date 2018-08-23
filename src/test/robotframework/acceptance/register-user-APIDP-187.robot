@@ -1,8 +1,4 @@
 *** Settings ***
-Library    BuiltIn
-Library    SeleniumLibrary
-Library   OperatingSystem  WITH NAME  os
-Library  String   WITH NAME  str
 Resource   imports.txt
 
 *** Test Cases ***
@@ -15,6 +11,7 @@ User Registration - Fail Scenarios
     Firstname  Lastname  test123  ${EMPTY}  pass  pass  E-mail address field is required.
     Firstname  Lastname  test123  test.auto@swift.com  ${EMPTY}  pass  Password field is required.
     Firstname  Lastname  test123  test.auto@swift.com    pass  ${EMPTY}  The specified passwords do not match.
+    Firstname  Lastname  test123  test.auto@swift.com    pass  pass1  The specified passwords do not match.
 
 *** Keywords ***
 User Registration - Fail

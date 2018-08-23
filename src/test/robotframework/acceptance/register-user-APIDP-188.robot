@@ -1,10 +1,5 @@
 *** Settings ***
-Library    BuiltIn
-Library    SeleniumLibrary
-Library   OperatingSystem  WITH NAME  os
-Library  String   WITH NAME  str
 Resource   imports.txt
-Library    ImapLibrary
 
 *** Test Cases ***
 User Registration - Success Scenarios
