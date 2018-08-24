@@ -1,12 +1,15 @@
 *** Settings ***
-Resource      Generic/generic_keywords.robot
-Resource      Generic/GUI_MAP_HOME_PAGE.robot
-Resource      Generic/GUI_MAP_REGISTER_DIALOG.robot
-Resource      Generic/GUI_MAP_LOGIN_DIALOG.robot
-Resource      Generic/GUI_MAP_USER_HOME.robot
-Resource      Generic/my-app-keywords.robot
-Library    BuiltIn
-Library    SeleniumLibrary
-Library   OperatingSystem  WITH NAME  os
-Library  String   WITH NAME  str
-Library    ImapLibrary
+Resource      keywords/generic.robot
+Resource      keywords/Login.robot
+Resource      keywords/my-app.robot
+Resource      keywords/generic.robot
+Resource      generic/registration.robot
+Resource      variables/GUI_MAP_REGISTER_DIALOG.robot
+Resource      variables/GUI_MAP_LOGIN_DIALOG.robot
+Resource      variables/GUI_MAP_USER_HOME.robot
+Resource      variables/my-app-keywords.robot
+Library     BuiltIn
+Library     SeleniumLibrary
+Library     OperatingSystem  WITH NAME  os
+Library     String   WITH NAME  str
+Library     ImapLibrary
